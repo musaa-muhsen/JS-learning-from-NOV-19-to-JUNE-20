@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function declarations
+    
+    //setting up default old school style //no curly braces on the function 
+     
+     function greet(firstName, lastName) {
+         if(typeof firstName === 'undefined') firstName = 'John'
+         if(typeof lastName === 'undefined') lastName = 'Doe'
+         
+         return 'hello ' + firstName + ' ' + lastName;
+     }
+    
+     //console.log(greet()); //John Doe 
+     
+     //same as 
+     //default arguement put it in the paramentors 
+
+    function greet(firstName = 'John', lastName = 'Doe') {
+        return 'hello ' + firstName + ' ' + lastName;
+    }
+     console.log(greet());
+     
+     //FUNCTION EXPRESSION - good for hoisting 
+     //function expression is basicley assigning the function to a variable, remeber to also add a ; because its a variable 
+    
+     //ONAMISES function // also added a default arguement 
+      
+    const square = function(x = 3) {
+       return x*x;
+    };
+
+    //you could also do a named function expression (not the best way though) 
+    //same as 
+    
+    // const squarez = function square(){
+    //    return x*x;
+    // }; //remember the semi colon 
+
+    // console.log(squarez(8));
+    
+    //functions inside of objects as well as opposed to just in the global scope, when a function is put inside of an object it's called a method.
+
+    const todo_obj = {
+        add: function(x,y) {
+             return x + y;
+        }, 
+        edit: function(id) {
+            return `edit todo ${id}`
+        } 
+
+
+    } //where the object ends
+    
+    todo_obj.delete = function() {
+        return 'added a function to the object outside of the main object'
+    } 
+
+    console.log(todo_obj.add(3,7));
+    console.log(todo_obj.edit(12));
+    console.log(todo_obj.delete());
+    
+    //IMMIDIATLY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+    
+    (function() {
+       console.log('IIFE ran...');
+    })();
+
+    //same as 
+   console.log((function() {
+          return 'IIFE ran... 2';
+    })());
+
+
+    //passing through an arguement 
+    
+    (function(name){
+        console.log('hello ' + name);
+    })('brad');
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+const object1 = new Object();
+object1.property1 = 42;
+object1
+{property1: 42}

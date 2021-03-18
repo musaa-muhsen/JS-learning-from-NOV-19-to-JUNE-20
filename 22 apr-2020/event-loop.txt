@@ -1,0 +1,4 @@
+From there, the anonymous function that is given to setTimeout is added to the Web APIs section. 
+It’s this section which is responsible for counting to 1000 milliseconds.
+
+run time vs event loop

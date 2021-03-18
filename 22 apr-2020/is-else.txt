@@ -1,0 +1,11 @@
+Syntax
+if (condition)
+   statement1
+[else
+   statement2]
+condition
+An expression that is considered to be either truthy or falsy.
+statement1
+Statement that is executed if condition is truthy. Can be any statement, including further nested if statements. To execute multiple statements, use a block statement ({ ... }) to group those statements. To execute no statements, use an empty statement.
+statement2
+Statement that is executed if condition is falsy and the else clause exists. Can be any statement, including block statements and further nested if statements.

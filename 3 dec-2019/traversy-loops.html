@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //LOOPS
+      
+      //for loop 
+      //dont use const in loops,loops are set up like functions, 3 paramentors 
+      //declaration of the variable 
+      //i<10 = is the condition 
+      //i++ means i = i + 1
+      
+      //The BREAK statement "jumps out" of a loop.
+
+      //The CONTINUE statement "jumps over" one iteration in the loop.
+     //for loop
+      /* for(let i = 0;i < 10; i++) {
+      // 2 if statements inside the loop 
+         if(i === 2) {
+              console.log('2 is my favorite number');
+              continue;
+          }
+         
+         if(i === 5) {
+             console.log('stop the loop');
+             break;
+         }
+          console.log(i);
+
+      }*/
+      //while loop //pretty much as for loops 
+     //declare the variable outside of the loop & declare the condition in the paramter of the while loop 
+     /*let i = 0;
+     const number = "number is "
+     while (i < 10) {
+         console.log(number + i);
+         i++;
+     }*/
+
+     //DO WHILE LOOP
+     // the 'do' will always run no matter what, even if the condition is never met 
+      //inside the while loop is where the action takes place
+     //always put the incrementation inside the while loop 
+
+     let x = 200;
+     do {
+         console.log('number ' + x);
+         x++;
+     }
+     while(x < 10);
+     //answer is 200
+
+     //Looping through arrays ========================
+
+      const cars = ['ford', 'honda', 'toyota', 'ferrieri']
+
+    //[i] will output the length number and cars[2] will output toyota so combine them together will give you =
+
+      /*for(let i = 0;i < cars.length; i++) {
+          console.log(cars[i]);
+      }*/
+
+       //looks a lot cleaner to use an array foreach method 
+      //foreach = The forEach() method executes a provided function once for each array element. //w3school The forEach() method calls a function once for each element in an array, in order.
+      //FYI an element is a value
+
+
+
+       cars.forEach(function(car){
+           console.log(car);// prints out the whole array values 
+        });
+
+      //same as 
+
+      cars.forEach(car => console.log(car));
+
+      //same as 
+
+      cars.forEach(carArrayFunction)
+
+      function carArrayFunction(car) {
+          console.log(car); 
+      }
+      //foreach with 3 parameters 
+
+      cars.forEach(function(car,index,array){
+        console.log(`${index} : ${car}`);
+      });
+
+      //MAP =========== method to return a new array  
+
+      //an array of 2 objects 
+      const users = [
+         {id: 1, name:'John'},
+         {id: 2, name: 'Sara'},
+         {id: 3, name: 'Karen'},
+         {id: 4, name: 'Steve'}
+      ];
+
+      const ids = users.map(user => {return user.id});
+
+      console.log(ids); //1-4
+
+    
+      //FOR IN LOOP
+      //for in loops are basically loop or iterate through objects so we can get key value pairs. 
+      //for/in - loops through the properties of an object
+
+      //syntax is = 
+      //for (variable in object)
+      //statement
+
+     //objects have key value pairs
+    
+   //Specifically, "enumerable" means that there is some sort of ordering scheme taking place, so that you can quickly/easily address the items in that set/sequence/collection (or, in that section of JavaScript: The Definitive Guide, the object).
+
+      const obj = {a: 1,
+                   b: 2,
+                   c: 3};
+        
+    
+      for (const prop in obj) {
+          //console.log(prop);
+         let outcome = `${prop}: ${obj[prop]}`;
+         console.log(outcome);
+      }
+
+
+
+
+        //The addition assignment operator (+=) adds a value to a variable.
+        var y = 10;
+        //y += 5;
+        //same as 
+         y = y + 5;
+         console.log(y);
+        
+    //parameters and arguments explained 
+
+    //Function Parameters
+/* 
+
+Parameters identify values that are passed into a function. 
+For example, a function to add three numbers might have three parameters. 
+A function has a name, and it can be called from other points of a program. 
+When that happens, the information passed is called an argument.
+ Modern programming languages typically allow functions to have several parameters.
+
+Each function parameter has a type followed by an identifier, 
+and each parameter is separated from the next parameter by a comma. 
+The parameters pass arguments to the function. When a program calls a function, 
+all the parameters are variables. The value of each of the resulting arguments 
+is copied into its matching parameter in a process call pass by value. 
+The program uses parameters and returned values to create functions 
+that take data as input, make a calculation with it and return the value to the caller.
+
+The Difference Between Functions and Arguments
+The terms parameter and argument are sometimes used interchangeably.
+ However, parameter refers to the type and identifier, and arguments are the values passed to the function.
+In the following C++ example, int a and int b are parameters,
+ while 5 and 3 are the arguments passed to the function.
+
+int addition (int a, int b)
+{
+  int r;
+  r=a+b;
+  return r;
+}
+*/
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Syntax:
+
+To initialise an empty namespace
+ var <namespace> = {}; 
+To access variables in the namespace
+ <namespace>.<identifier> 
+Below example illustrates the namespace in JavaScript:
+
+Example: As shown below, the identifier startEngine is used to denote different functions in car and bike objects. In this manner, we can use the same identifier in different namespaces by attaching it to different global objects.
+
+<script> 
+var car = { 
+	startEngine: function () { 
+		console.log("Car started");			 
+	}		 
+} 
+
+var bike = { 
+	startEngine: function () { 
+		console.log("Bike started"); 
+	} 
+} 
+
+car.startEngine(); 
+bike.startEngine(); 
+</script> 

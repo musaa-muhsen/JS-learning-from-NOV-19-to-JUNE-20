@@ -1,0 +1,5 @@
+Benifits of CommonJS API 
+
+1) We no longer have to wrap our files in IIFEs.
+2) We don't have to worry about keeping scripts in order.
+3) We don't anything that we're exposing to the global namespace.

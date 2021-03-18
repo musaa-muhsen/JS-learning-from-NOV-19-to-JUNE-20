@@ -1,0 +1,14 @@
+// EVENT PROPAGATION PATH 
+
+capture down, bubble up.
+
+- TARGET PHASE DEFINATION
+
+Once the event reaches the destination it finally gets to fire on the target element, 
+just in case the target itself has an event handler registered to it. 
+
+To review, event propagation can be broken into three phases.
+
+1) The capture phase — event object starts at Window and moves towards event target firing on every element in its path.
+2) The target phase —event fires only once on the target element.
+3) The bubble phase — event fires on the parent of the target and keeps firing all the way back to Window.

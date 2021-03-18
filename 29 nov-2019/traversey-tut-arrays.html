@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const numbers = [46,50,83,90,30,59,77,44,5];
+       //same as 
+       const numbers2 = new Array(22,45,33,76,69);
+
+       const fruit = ['Apple', 'Banana', 'orange',"pear"];
+       const mixed = [22,'hello world', true, undefined, null, {a:1,b:1}, new Date()];
+  
+
+       let val;
+
+       //get array length 
+    //    val = numbers.length;
+
+    //    // check if is array 
+    //    val = Array.isArray(numbers);
+
+    //    //get single value 
+    //    val = numbers[3];
+       
+    //    //insert into array
+    //    numbers[2] = 100;
+
+    //    //find index of value 
+    //    val = numbers.indexOf(59); //5
+
+
+    //    //mutating arrays =====================
+    //   //add on to end
+    //   numbers.push(250);
+
+    //   // add on to front 
+    //   numbers.unshift(120);
+      
+    //   //take off from the end 
+    //   numbers.pop();
+
+    //   // take off from the front 
+    //   numbers.shift();
+
+    //   // splice values 
+    // numbers.splice(1,1); //takes off one
+
+    //reverse?? not working for me 
+    //numbers.reverse();
+
+ //concat arrays 
+//val = numbers.concat(numbers2);
+
+
+//Sort ========
+    //val = fruit.sort();
+
+    //doesnt work, only sort first digit
+    val = numbers.sort();
+    //use the "compare function"
+    val = numbers.sort(function(x,y) {
+         return x - y;
+    });
+     
+     //reverse version of sorting
+    val = numbers.sort(function(x,y,z) {
+         return y - x;
+    });
+
+    //find???
+    function over50(num) {
+        return num > 50;
+    }
+    val = numbers.find(over50);
+
+
+
+       console.log(val);
+
+    </script>
+</body>
+</html>

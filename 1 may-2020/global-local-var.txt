@@ -1,0 +1,17 @@
+Global and Local variables in JavaScript
+Variables: It holds the data or information which can be changed anytime. JavaScript use reserved keyword var to declare variables. In JavaScript, there are two types of variable and also it tells you where in your program you are allowed to use the variables and functions that you’ve defined.
+
+Local Variable:
+When you use JavaScript, local variables are variables that are defined within functions. They have local scope, which means that they can only be used within the functions that define them.
+
+Global Variable:
+In contrast, global variables are variables that are defined outside of functions. These variables have global scope, so they can be used by any function without passing them to the function as parameters.
+
+Local Variable: Since local variables are defined inside the function so variables with the same name can be used in different functions.
+
+function myFunc() {
+    var helloWorld = 'Hello World'; // local variable 
+    console.log(helloWorld);
+}
+
+myFunc()

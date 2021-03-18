@@ -1,0 +1,37 @@
+var object = {
+  foo: 1,
+  "bar": "some string",
+  baz: {
+  }
+};
+
+
+Bracket notation is more expressive than dot notation because it allows a variable to specify all or part
+of the property name. This is possible because the JavaScript interpreter automatically converts the
+expression within the square brackets to a string, and then retrieves the corresponding property.
+The following example shows how property names can be created on the fly using bracket notation. 
+In the example, the property name foo is created by concatenating the contents of variable f, with
+the string "oo".
+
+var f = "f";
+
+object[f + "oo"] = "bar";
+
+
+Accessing Nested Properties ==================================================================
+
+
+object.baz.foo.bar;
+object["baz"]["foo"]["bar"];
+object["baz"].foo["bar"]; // not good to use 
+
+
+Expressions like the ones shown in the previous example can cause performance to suffer if used improperly. Evaluating each dot or bracket expression takes time. If the same property is used multiple times, then it makes more sense to access the property once, and then store the value in a local variable for all future uses. The following example uses bar many times within a loop. However, instead of wasting time computing the same value over and over, bar is stored in a local variable.
+
+var bar = object.baz.foo.bar;
+var count = 0;
+
+for (var i = 0; i < 100000; i++) {
+  count += bar;
+  // better than count += object.baz.foo.bar;
+}

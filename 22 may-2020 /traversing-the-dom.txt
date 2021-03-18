@@ -1,0 +1,19 @@
+list is a ul of li's
+listItem is the first li 
+
+// children 
+list.children = HTMLcollection of all the main elements 
+list.children[0] = to get a specific child
+list.firstElementChild = to get the actual first element 
+list.lastElementChild = to get the actual last child
+
+// parent 
+listItem.parentElement = the whole ul itself 
+
+// siblings 
+listItem.nextElementSibling = the next li if there is one, if there isn't null would returned
+listItem.previousElementSibling = the previous li, if there is'nt null would be returned 
+
+
+
+

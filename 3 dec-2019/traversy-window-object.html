@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <div style="margin: 1000px;width: 2000px; height: 100px;"></div>
+    <script>
+
+        //window methods /objects /properties 
+
+        //document object is part of the window object 
+        //the processes used to connect to local storage and fetch api
+         
+         //WINDOW METHODS ???
+
+         //window.console.log(123) //no need for 
+
+         //window.alert('hello world');
+
+         //prompt 
+         //const input = window.prompt();
+         //console.log(input)
+
+         //confirm 
+
+         /*if (confirm('are you sure')) {
+             console.log('yes!');
+         } else {
+             console.log('no');
+         }*/
+         
+         // PROPERTIES 
+
+         let val;
+
+         //outer height and width 
+         val = window.outerHeight;
+         val = window.outerWidth;
+        
+        //inner height and width 
+         val = innerHeight;
+         val = innerWidth;
+        
+        //scroll points 
+        val = window.scrollY;
+        val2 = window.scrollX;
+         
+        //  console.log(val);
+        //  console.log(val2)
+
+        //location Object ================
+        
+        val = window.location
+        val = window.location.href; //url
+        val = window.location.search; //adding url stuff
+
+        // redirect - usually re direct on your own site 
+        // window.location.href = 'http://google.com'; 
+
+        //reload - only use inside of a function 
+        //window.location.reload();
+
+        //history object ================
+
+        //dont understand how to use properly 
+        //history.go(0);
+        val = window.history.length;
+
+        //navigator object - browswer itself
+        // val = window.navigator;
+         val3 = window.navigator.platform;
+
+        // if (val2 === val2) {
+        //     window.alert('hello macworld');
+
+        // } 
+
+
+        console.log(val3);
+        
+        //
+
+
+    </script>
+</body>
+</html>

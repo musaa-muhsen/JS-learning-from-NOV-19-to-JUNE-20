@@ -1,0 +1,9 @@
+tyler this rules
+
+implicit binding which is you look to left of the dot when invoked
+
+explicit binding which is telling a function what context this keyword is going to be using call, apply or binding
+
+the new binding is whenever you have a function invoke with the new keyword, the this keyword is bound to a new object constructed
+
+the window binding where if none of these rules apply then that this keyword is going to default to the window object unless you're in strict mode then it's just going to be undefined

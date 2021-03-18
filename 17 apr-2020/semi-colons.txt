@@ -1,0 +1,25 @@
+
+/*
+var x, y, z;    // Statement 1
+x = 5;          // Statement 2
+y = 6;          // Statement 3
+z = x + y;      // Statement 4
+
+
+Semicolons; Semicolons separate JavaScript statements.
+Add a semicolon at the end of each executable statement:
+
+without semicolons can get away with individual lines
+
+var a, b, c;
+a = 5
+b = 6
+c = a + b;
+
+with semicolons can have statements on a single line
+
+a = 5; b = 6; c = a + b;
+
+
+console.log(c)
+*/

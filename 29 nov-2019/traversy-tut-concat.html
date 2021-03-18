@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //string method and concatention 
+        let val; age = 36;firstName = 'christopher';lastName = 'smith'; 
+        let str = 'hello my name is musaa';
+        let tags = 'pop, rock, hippylove, yoooo';
+
+        val = firstName + lastName;
+        //concatenation 
+        val = firstName + ' ' + lastName;
+
+        //append 
+        val = 'brad ';
+        val += 'traversy';
+
+        val = 'hello, my name is ' + firstName + ' and I am ' + age;
+
+        //escaping 
+        val = 'this\'s awesome, I can\'t wait!';
+        
+
+        //concat() method with a space
+        val = firstName.concat(' no way ', lastName);
+
+        //change case 
+        val = firstName.toUpperCase(); //CHRISTOPHER
+        val = firstName.toLowerCase(); //christopher
+        
+
+        val = firstName.indexOf('s'); //4
+        val = firstName.lastIndexOf('christopher'); //0
+
+        // charAt() the position of the character 
+        val = firstName.charAt('2');//r
+        
+        //get the last character //common formula in JavaScript 
+        val = firstName.charAt(firstName.length -2);//e
+
+        //substring() method
+        val = firstName.substring(0,5); //chris
+        
+        //same as 
+
+        //slice() good for arrays 
+
+        val = firstName.slice(-3);//her
+
+       // const valTwo = ['hello','world'];
+        //val = valTwo.slice(0,2);
+       
+       //spilt() changes the string to an array of 4
+       val = tags.split(', ');
+
+       // replace 
+       val = str.replace('musaa', 'george');
+
+       //includes()
+       val = str.includes('hello');
+
+        console.log(val);
+
+    </script>
+</body>
+</html>

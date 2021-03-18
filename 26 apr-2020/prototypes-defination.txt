@@ -1,0 +1,20 @@
+// remember to add url of where i got the info from on top 
+
+All JavaScript objects inherit properties and methods from a prototype.
+
+Prototype Inheritance
+All JavaScript objects inherit properties and methods from a prototype:
+//aka all have 
+
+Date objects inherit from Date.prototype
+Array objects inherit from Array.prototype
+Person objects inherit from Person.prototype
+
+
+The Object.prototype is on the top of the prototype inheritance chain:
+
+Date objects, Array objects, and Person objects inherit from Object.prototype.
+
+constructor: ƒ Array() = constructor refers to the construtor itself 
+
+

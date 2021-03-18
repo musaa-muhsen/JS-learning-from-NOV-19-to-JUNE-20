@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menu toggle</title>
+    <style>
+
+    .menu {
+        background: pink;
+        width: 300px;
+        height: auto;
+        display: block;
+    } 
+
+    #myDIV {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+<article>
+    <a href="#" onclick="menuToggle()" class="menu-btn">menu</a>
+    <div class="menu">
+      <ul>
+          <li><a href="#">this is a link</a></li>
+          <li><a href="#">this is a link</a></li>
+          <li><a href="#">this is a link</a></li>
+          <li><a href="#">this is a link</a></li>
+      </ul>
+    </div>
+
+</article>
+    <button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">This is a div element!</div>
+    <script src="events-menu-toggle.js">
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Body.json() is asynchronous and returns a Promise object that resolves to a JavaScript object. 
+JSON.parse() is synchronous can parse a string and change the resulting returned JavaScript
+
+'AJAX' works with 'callbacks'; 'fetch' works with 'promises'. Use JSON.parse() to parse the response for AJAX.
+ Use json() to parse the response for fetch.

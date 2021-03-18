@@ -1,0 +1,8 @@
+why the this keyword exists in the first place. 
+The this keyword allows you to reuse functions with 
+different contexts. Said differently, the “this” keyword 
+allows you to decide which object should be focal when 
+invoking a function or a method. Everything we talk about 
+after this will build upon that idea. We want to be able 
+to reuse functions or methods in different contexts or with 
+different objects.

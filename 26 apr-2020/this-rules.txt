@@ -1,0 +1,9 @@
+So putting all of our rules into practice, whenever I see the this keyword inside of a function, these are the steps I take in order to figure out what it’s referencing.
+
+Look to where the function was invoked.
+Is there an object to the left of the dot? If so, that’s what the “this” keyword is referencing. If not, continue to #3.
+Was the function invoked with “call”, “apply”, or “bind”? If so, it’ll explicitly state what the “this” keyword is referencing. If not, continue to #4.
+Was the function invoked using the “new” keyword? If so, the “this” keyword is referencing the newly created object that was made by the JavaScript interpreter. If not, continue to #5.
+Is “this” inside of an arrow function? If so, its reference may be found lexically in the enclosing (parent) scope. If not, continue to #6.
+Are you in “strict mode”? If yes, the “this” keyword is undefined. If not, continue to #6.
+JavaScript is weird. “this” is referencing the “window” object.

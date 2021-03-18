@@ -1,0 +1,9 @@
+//null = null is an assignment value. It can be assigned to a variable as a representation of no value
+
+null === undefined // false
+null == undefined // true
+null === null // true
+null = 'value' // ReferenceError
+undefined = 'value' // 'value'
+
+The JavaScript primitive type null represents an intentional absence of a value — it is usually set on purpose to indicate that a variable has been declared but not yet assigned any value. ... That is because a variable that has been declared but not assigned any value is undefined , not null .

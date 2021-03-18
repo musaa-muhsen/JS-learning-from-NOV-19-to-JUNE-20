@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <h1 onclick="changeText(this)">Click on this text!</h1>
+
+<h1 id="myH"></h1>
+<p id="myP"></p>
+
+<p>Click the button to join two arrays.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+// Change heading:
+//document.getElementById("myH").innerHTML = "JavaScript Comments";
+// Change paragraph:
+//document.getElementById("myP").innerHTML = "My first paragraph.";
+
+
+function myFunction() {
+  var hege = ["Cecilie", "Lone"];
+  var stale = ["Emil", "Tobias", "Linus"];
+  var children = hege.concat(stale); 
+  document.getElementById("demo").innerHTML = children;
+}
+
+</script>
+
+</body>
+</html>

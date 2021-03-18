@@ -1,0 +1,8 @@
+lexical scoping (static scoping)
+
+Posted by: Margaret Rouse
+WhatIs.com
+  
+Lexical scoping (sometimes known as static scoping ) is a convention used with many programming languages that sets the scope (range of functionality) of a variable so that it may only be called (referenced) from within the block of code in which it is defined. The scope is determined when the code is compiled. A variable declared in this fashion is sometimes called a private variable.
+
+The opposite approach is known as dynamic scoping . Dynamic scoping creates variables that can be called from outside the block of code in which they are defined. A variable declared in this fashion is sometimes called a public variable.

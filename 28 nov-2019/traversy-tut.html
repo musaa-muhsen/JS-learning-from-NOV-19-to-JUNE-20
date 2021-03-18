@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //TYPE CONVERSION LESSON
+        //let varaible because its an undeclaried variable 
+        let val;
+        val = 5;
+        
+        //number to string, use uppercase S
+        val = String(555);
+        val = String(4+4);
+        //bool to string 
+        val = String(true);
+        //date to string 
+        val = String(new Date());
+        // array to string 
+        val = String([1,2,3,5]);
+
+        //The String() function returns the same value as toString() of the individual objects
+      val = (5).toString();
+      val = (true).toString(); 
+
+      // string to number 
+      val = Number('5');
+      val - Number(true); //1
+      val = Number(false); //0
+      val = Number(null); //0
+      val = Number('hello'); //NaN is a special value is JS
+      val = Number([1,2,3]);
+
+      val = parseInt('100.30'); //answer 100
+      val = parseFloat('100.300'); // anmswer 100.3
+
+        //output 
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.toFixed(2));
+        //console.log(val.length);  
+
+        const val1 = String(5);
+        const val2 = 6;
+        const sum = Number(val1 + val2);
+        
+        console.log(sum); //number 56 
+        console.log(typeof sum);
+
+      
+
+       //Math object
+        </script>
+</body>
+</html>

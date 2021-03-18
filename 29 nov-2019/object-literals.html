@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Object literals are defined using the following syntax rules:
+//A colon separates property name[1] from value.
+//A comma separates each name-value pair from the next.
+//There should be no comma after the last name-value pair
+         let val;
+
+        //basic object literal 
+        
+        const person = {
+            firstName: 'john',
+            lastName: 'smith',
+            age: 36,
+            email: 'john@aol.com',
+            hobbies: ['music', 'sports'],
+            //oject literal within a object literal
+            address: {
+                city: 'maimi',
+                state: 'FL'
+            },
+            getBirthYear: function(){
+               return 2017 - this.age; 
+            }
+
+        }
+
+       //get specific value 
+       val = person.firstName;
+       //same as 
+       val = person['lastName'];
+       val = person.age;
+       val = person.hobbies[1];//sports
+       val = person.address.state;
+       val = person.address['city'];
+       val = person.getBirthYear(); // remember to include the brackets
+       console.log(val);
+       //objects inside an array 
+       const people = [
+           {name: 'john', age:30},
+           {name: 'mike', age: 23}
+       ];
+        
+       for(let i = 0;i < people.length; i++) {
+           console.log(people[i].name);
+       }
+
+
+    </script>
+</body>
+</html>

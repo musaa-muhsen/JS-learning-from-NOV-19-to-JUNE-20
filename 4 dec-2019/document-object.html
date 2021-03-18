@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    #wrapper {
+
+ max-width: 1000px;
+ margin: 0 auto;
+    }
+  table, th, td {
+      border: 1px solid black;
+  }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <h1>title one</h1>
+ <header class="nav-container">
+    <ul id="nav">
+        <li id="a_link"><a href="#">link-1</a></li>
+        <li id="a_link"><a href="#">link-2</a></li>
+        <li id="a_link"><a href="#">link-3</a></li>
+        <li id="a_link"><a href="#">link-4</a></li>
+        <li id="a_link"><a href="#">link-5</a></li>
+    </ul>
+</header>
+    <br>
+
+    <ul class="list-main" id="main-list">
+        <li class="list-item">list-item-1</li>
+        <li class="list-item">list-item-2</li>
+        <li class="list-item">list-item-3</li>
+        <li class="list-item">list-item-4</li>
+        <li class="list-item">list-item-5</li>
+        <li class="list-item">list-item-6</li>
+    </ul>
+    <h1>title two</h1>
+
+    <form id="formID" class="formCLASS">
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname">
+          </form>
+
+    <p id="para-1">  
+        An HTML table is defined with the table tag.<br>
+       Each table row is defined with the tr tag. A table header is defined with the th
+       tag. By default, table headings are bold and centered. A table data/cell is defined with the td tag.
+       Also works without the th tag</p> 
+     <!-- tr = table row
+          th = table header 
+          tb = table data
+          all above wrapped in a table tag 
+    -->
+      <table style="width: 400px">
+        <tr>
+             <th>firstName</th>
+             <th>lastName</th>
+             <th>Age</th>
+        </tr>
+          <tr>
+             <td>John</td>
+             <td>Doe</td>
+             <td>50</td>
+          </tr>
+          <tr>
+             <td>Joe</td>
+             <td>Smith</td>
+             <td>30</td>
+          </tr>
+          <tr>
+            <td>Tom</td>
+            <td>Ford</td>
+            <td>31</td>
+          </tr>
+
+      </table>
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="dom-obj.js"></script>
+</body>
+</html>

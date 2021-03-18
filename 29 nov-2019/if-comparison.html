@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const color = 'yellow';
+
+        if(color === 'red') {
+            console.log('color is red');
+        } else if (color === 'blue') {
+            console.log('color is blue'); 
+        } else {
+            console.log('not correct');
+        }
+        //logical operator 
+        //AND &&
+        const name = 'john';
+        const age = 14;
+        // no need for brackets 
+        if (age > 0 && age < 11) console.log('john is a child');
+        else if (age >= 11 && age <= 19)  console.log('john is a teenager');
+        else console.log('john is an adult');
+
+
+        //|| or operator if too young or too old cant enter running event 
+        if  (age < 18 || age >= 65) console.log(`${name} can't enter the race`)
+        else console.log(`${name} can enter the race`)
+        
+
+        const id = 104;
+
+        //ternary operator 
+        console.log(id === 100 ? 'correct' : 'incorrect');
+
+        //same as 
+
+        if (id === 100) {
+            console.log('correct');
+        } else {
+            console.log('incorrect');
+        }
+
+
+        //SWITCHES ///////////////////////
+
+        //check if color is red or blue if not have a default 
+
+        const colorVal = 'red';
+        // passing in the red value 
+        switch(colorVal) {
+            case 'blue':
+            console.log('blue');
+            break;
+            case 'red':
+            console.log('red');
+            break;
+            default:
+            console.log('this is not the right color');
+            break;
+        }  
+
+        // switch for what day of the week it is "today is _____"
+        //days are zero based so starts at sunday which is 0 till saturday which is 6
+        let today;
+         //the switch (condition) is what the switch will look at using numbers to represent the days
+        switch(new Date().getDay()) {
+
+            case 0:
+            today = 'sunday';
+            break;
+
+            case 1:
+            today = 'monday';
+            break;
+
+            case 2:
+            today = 'tuesday';
+            break;
+
+            case 3:
+            today = 'wednesday';
+            break;
+
+            case 4: 
+            today = 'thursday';
+            break;
+
+            case 5: 
+            today = 'friday';
+            break;
+
+            case 6:
+            today = 'saturday';
+            break;
+        }
+
+        console.log(`today is ${today}`);
+
+
+    </script>
+</body>
+</html>

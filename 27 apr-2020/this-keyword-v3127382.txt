@@ -1,0 +1,29 @@
+// taken from 
+
+why the this keyword exists in the first place? The this keyword allows you to reuse 
+functions with different contexts. Said differently, the “this” keyword allows you 
+to decide which object should be focal when invoking a function or a method. 
+Everything we talk about after this will build upon that idea. We want to be able to 
+reuse functions or methods in different contexts or with different objects.
+
+var person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+person.fullName();   // Will return "John Doe"
+
+
+
+The this Keyword
+
+In a function definition, this refers to the "owner" of the function.
+
+In the example above, this is the person object that "owns" the fullName function.
+
+In other words, this.firstName means the firstName property of this object.
+
+Read more about the this keyword at JS this Keyword.
+

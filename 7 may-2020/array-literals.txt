@@ -1,0 +1,40 @@
+https://www.w3resource.com/javascript/variables-literals/literals.php
+
+JavaScript : Array literals
+In Javascript, an array literal is a list of expressions, each of which represents an array element, enclosed in a pair of square brackets ' [ ] ' . When an array is created using an array literal, it is initialized with the specified values as its elements, and its length is set to the number of arguments specified. If no value is supplied it creates an empty array with zero length.
+
+Creating an empty array :
+
+var fruits = [ ];
+
+Creating an array with four elements.
+
+var fruits = ["Orange", "Apple", "Banana", "Mango"]
+
+Comma in array literals
+
+There is no need to specify all elements in an array literal. If we put two commas in a row at any position in an array then an unspecified element will be created in that place.
+
+The following example creates the fruits array :
+
+fruits = ["Orange", , "Mango"]
+
+This array has one empty element in the middle and two elements with values. ( fruits[0] is "Orange", fruits[1] is set to undefined, and fruits[2] is "Mango").
+
+If you include a single comma at the end of the elements, the comma is ignored. In the following example, the length of the array is three. There are no fruits[2].
+
+fruits = ["Orange", "Mango",]
+
+In the following example, the length of the array is four, and fruits[0] and fruits[2] are undefined.
+
+fruits = [ , 'Apple', , 'Orange'];
+
+JavaScript: Integers literals
+
+Description
+
+An integer must have at least one digit (0-9).
+
+No comma or blanks are allowed within an integer.
+It does not contain any fractional part.
+It can be either positive or negative if no sign precedes it is assumed to be positive.

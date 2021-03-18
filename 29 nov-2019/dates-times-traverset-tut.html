@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // date object 
+    let val;
+    //basic format 
+    const today = new Date(); //this moment date, make new object
+    
+    //syntax set in different ways  but the outputs are all the same???
+    let birthday = new Date('09-10-1981 11:25:00');
+    birthday = new Date('September 10 1981');
+    birthday = new Date('09/10/1986 11:25:00');
+
+
+    val = today.getMonth(); //10 because it is november -1
+    val = today.getDate(); //29th
+    val = today.getDay(); //5 = friday 
+    val = today.getFullYear(); //2019 
+    val = today.getHours(); //23 
+    val = today.getMinutes(); //7
+    val = today.getSeconds(); //55
+    val = today.getMilliseconds();//567
+    val = today.getTime(); //since 1970?
+console.log(val)
+//setting the time
+    birthday.setMonth(2);
+    birthday.setDate(12);
+    birthday.setFullYear(1985);
+    birthday.setHours(3);
+    birthday.setMinutes(30);
+    birthday.setSeconds(25);
+
+
+
+    console.log(birthday);
+
+/*
+    function parseMillisecondsIntoReadableTime(milliseconds){
+  //Get hours from milliseconds
+  var hours = milliseconds / (1000*60*60);
+  var absoluteHours = Math.floor(hours);
+  var h = absoluteHours > 9 ? absoluteHours : '0' + absoluteHours;
+
+  //Get remainder from hours and convert to minutes
+  var minutes = (hours - absoluteHours) * 60;
+  var absoluteMinutes = Math.floor(minutes);
+  var m = absoluteMinutes > 9 ? absoluteMinutes : '0' +  absoluteMinutes;
+
+  //Get remainder from minutes and convert to seconds
+  var seconds = (minutes - absoluteMinutes) * 60;
+  var absoluteSeconds = Math.floor(seconds);
+  var s = absoluteSeconds > 9 ? absoluteSeconds : '0' + absoluteSeconds;
+
+
+  return h + ':' + m + ':' + s;
+}
+
+
+var time = parseMillisecondsIntoReadableTime(1578691483847);
+
+alert(time);
+*/
+
+function msToTime(duration) {
+  var milliseconds = parseInt((duration % 1000) / 100),
+    seconds = Math.floor((duration / 1000) % 60),
+    minutes = Math.floor((duration / (1000 * 60)) % 60),
+    hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+  hours = (hours < 10) ? "0" + hours : hours;
+  minutes = (minutes < 10) ? "0" + minutes : minutes;
+  seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+  return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+}
+console.log(msToTime(1578762000));
+
+/*
+function msToTime(duration) {
+    var milliseconds = parseInt((duration%1000)/100)
+        , seconds = parseInt((duration/1000)%60)
+        , minutes = parseInt((duration/(1000*60))%60)
+        , hours = parseInt((duration/(1000*60*60))%24);
+
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+    return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+}
+*/
+/*
+function convertMS( milliseconds ) {
+    var day, hour, minute, seconds;
+    seconds = Math.floor(milliseconds / 1000);
+    minute = Math.floor(seconds / 60);
+    seconds = seconds % 60;
+    hour = Math.floor(minute / 60);
+    minute = minute % 60;
+    day = Math.floor(hour / 24);
+    hour = hour % 24;
+    return {
+        day: day,
+        hour: hour,
+        minute: minute,
+        seconds: seconds
+    };
+}
+
+console.log(convertMS(1578688430));
+*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+module system
+
+MODULE DEFINATIONS =
+- one of a set of separate parts that, when combined, form a complete whole 
+- example sentance: The emergency building is transported in individual modules, such as bedrooms and a kitchen, which are put together on site.
+- example sentance: The full computer program is made up of several modules (= small programs) which should be individually tested before being integrated.
+
+- each of a set of standardized parts or independent units that can be used to construct a more complex structure, such as an item of furniture or a building.
+
+MODULARITY 
+- 2. Constructed out of usually prefabricated units with standardized dimensions, allowing for easy assembly and flexible arrangement: modular furniture; modular homes.
+
+we use modules instead of liberies and extra files to save space?
+with modules (made from yourself or another API) and you take parts of it you need as imports 
+
+module - a file that exports some code 
+tree shakable - import what you need, shake off the rest
+for module files to be exported it's convention to use uppercase letter for the name  
+// for es6 modules you don't have to spefify thr file type so so Search.js just Search 
+
+modules in a nutshell -
+
+
+Before we learn how to create modules in JavaScript, we first need to understand what they are and why 
+they exist. Look around you right now. Any marginally complex item that you can see is probably built
+ using individual pieces that when put together, form the item.
+
+REUSABLITY term - re-use the same components 
+
+component defination - a part or element of a larger whole, especially a part of a machine or vehicle.
+
+compose defination -  to make or form by combining things, parts, or elements:
+
+leverage defination  - to use (a quality or advantage) to obtain a desired effect or result:
+
+// below is the reason for IIFEs being used in the video =   
+Along with that, as we’ll see soon, modules prevent you from polluting the global namespace and allow you to avoid naming collisions.
+
+// modules in a nutshell 2 = 
+We’ve seen the obvious benefits of modularity when it comes to everyday items like a watch, but what about 
+software? Turns out, it’s the same idea with the same benefits. Just how the watch was designed, 
+we should design our software separated into different pieces where each 
+piece has a specific purpose and clear boundaries for how it interacts with other pieces. 
+In software, these pieces are called modules. At this point, a module might not sound too different 
+from something like a function or a React component. So what exactly would a module encompass?
+
+EACH MODULE HAS THREE PARTS 
+
+1) dependencies aka imports
+2) once you have established what dependencies your module needs, the next part is the actual code to use of the module
+3) exports 
+
+// so if there is 2 functions that have the same name in seperate files the browser will take the last one but use both anyway???
+use IIFE to avoid dumping everything onto the global namespace. 
+benifits of using IIFE Module Pattern 1) avoid 
+
+
+
+Earlier our first instinct for the separation of modules was to have a new module for each file. 
+Even though that doesn’t work out of the box with JavaScript, I think that’s an obvious separation
+point for our modules. Each file is its own module. Then from there, the only other feature we’d 
+need is to have each file define explicit imports (or dependencies) and explicit exports which 
+will be available to any other file that imports the module.
+
+At this point, it should be pretty clear that modules are a critical feature for writing scalable, maintainable JavaScript.
+
+CommonJS, each file could be a new module with a clear way to define imports and exports - obviously, that’s the whole point.
+
+
+Tree Shaking
+There’s one more difference between CommonJS modules and ES Modules that we didn’t cover above.
+
+With CommonJS, you can require a module anywhere, even conditionally.
+
+if (pastTheFold === true) {
+  require('./parallax')
+}
+Because ES Modules are static, import statements must always be at the top level of a module. You can’t conditionally import them.
+
+
+es6 modules cheat sheet 
+
+// rabit hole shit =====================================================================
+
+function leftpad (str, len, ch) {
+  var pad = '';
+  while (true) {
+    if (len & 1) pad += ch;
+    len >>= 1;
+    else break;
+  }
+  return pad + str;
+}

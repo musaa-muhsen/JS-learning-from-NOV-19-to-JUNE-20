@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if</title>
+</head>
+<body>
+<p id="demo"></p>
+
+    <script>
+// an array with 4 cars and multiple undefined variables 
+ const cars =['bmw','volvo','saab','ford'];
+ //const i,len,text;
+let len = cars.length;
+let text = '';
+
+for (i = 0; i < len; i++) {
+
+text += cars[i] + "<br>";
+text = text + cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+
+
+//conditional expressions =======================
+//syntax (conditon) ? val1 : val2
+//This statement assigns the value "adult" to the variable status if age is eighteen or greater. 
+//Otherwise, it assigns the value "minor" to status.
+
+const age = 22;
+const status = (age <= 18) ? 'yes' : 'no';
+
+console.log(status);// answer no 
+
+
+
+x = 'hello ';
+y = 'world';
+
+z = x += y 
+console.log(z);
+
+ //for (i=0,len = cars.length, text = ''; i < len; i++)
+      </script>
+</body>
+</html>

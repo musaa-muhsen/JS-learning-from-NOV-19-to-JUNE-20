@@ -1,0 +1,3 @@
+What is the difference between a method and a function?
+
+In JavaScript, a method is code that belongs to an object and which is able to interface with other code and data within that object (object-orientated). A function is code that sits outside of an object and can be called from anywhere. In the case of the example above, publicMethod() is associated with the object ‘example’, so it is therefore a method. It is, however, just a naming convention. JavaScript does not have (or have a need for) a type ‘method’, just a type ‘function’ which can be associated to an object.

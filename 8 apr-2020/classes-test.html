@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content"></div>
+
+
+    <script>
+
+        class User {
+            constructor(email, name) {
+                this.email = email;
+                this.name = name;
+            }
+            signIn() {
+                return `user email ${this.email} : user name ${this.name}`;
+            }
+            signIn() {
+                return `user email ${this.email} : user name ${this.name}`;
+            }
+        }
+
+        userOne = new User('jim@aol.com', 'jimbo slice');
+        userTwo = new User('koney@gmail.com', 'koney man');
+        console.log(userOne);
+        console.log(userTwo.signIn());
+
+
+    </script>
+</body>
+
+</html>
